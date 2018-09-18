@@ -18,7 +18,7 @@ Vue.component('list-category',{
             let self = this
             axios({
                 method: "GET",
-                url: "http://localhost:3000/items"
+                url: `${baseUrl}/items`
             })
             .then(function ({ data }) {
                 console.log(data.data);
@@ -33,7 +33,7 @@ Vue.component('list-category',{
             let self = this
             axios({
                 method: "GET",
-                url: `http://localhost:3000/items/category/${category}`
+                url: `${baseUrl}/items/category/${category}`
             })
             .then(function ({ data }) {
                 console.log(data.data);

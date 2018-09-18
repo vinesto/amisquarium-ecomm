@@ -180,7 +180,7 @@ Vue.component('nav-bar', {
             this.errorMessage = []
                 axios({
                     method: "POST",
-                    url: 'http://localhost:3000/users/login',
+                    url: `${baseUrl}/users/login`,
                     data: {
                         email: this.loginEmail,
                         password: this.loginPassword
@@ -204,7 +204,7 @@ Vue.component('nav-bar', {
             let self = this
             axios({
                 method: "POST",
-                url: "http://localhost:3000/users/register",
+                url: `${baseUrl}/users/register`,
                 data:   {
                     name: this.registerName,
                     email: this.registerEmail,
@@ -239,7 +239,7 @@ Vue.component('nav-bar', {
             let self = this
             axios({
                 method:"POST",
-                url:"http://localhost:3000/transactions",
+                url:`${baseUrl}/transactions`,
                 headers:{
                     token:localStorage.getItem("token")
                 },
@@ -262,7 +262,7 @@ Vue.component('nav-bar', {
             let self = this
             axios({
                 method:"GET",
-                url:"http://localhost:3000/transactions",
+                url:`${baseUrl}/transactions`,
                 headers:{
                     token:localStorage.getItem("token")
                 }

@@ -27,7 +27,7 @@ Vue.component('list-item', {
             let self = this
             axios({
                 method: "GET",
-                url: "http://localhost:3000/items"
+                url: `${baseUrl}/items`
             })
                 .then(function ({ data }) {
                     console.log(data.data);
