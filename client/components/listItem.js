@@ -30,7 +30,7 @@ Vue.component('list-item', {
                 url: `${baseUrl}/items`
             })
                 .then(function ({ data }) {
-                    console.log(data.data);
+                    // console.log(data.data);
 
                     self.items = data.data
                 })

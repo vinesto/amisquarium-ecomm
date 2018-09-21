@@ -213,7 +213,7 @@ Vue.component('nav-bar', {
             })
                 .then(function (result) {
                     // alert("register success")
-                    console.log(result)
+                    // console.log(result)
                     self.errorMessage=[]
                     self.message = "Register success"
                     self.registerName = ''
@@ -228,7 +228,7 @@ Vue.component('nav-bar', {
                 })
         },
         logout(){
-            console.log('masuuk logout');
+            // console.log('masuuk logout');
             
             this.isLogout = true
             localStorage.clear()
@@ -277,7 +277,7 @@ Vue.component('nav-bar', {
         }
     },
     created() {
-        console.log(this.token,'token');
+        // console.log(this.token,'token');
         
         let checkToken = localStorage.getItem("token")
         if(checkToken){

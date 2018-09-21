@@ -21,7 +21,7 @@ Vue.component('list-category',{
                 url: `${baseUrl}/items`
             })
             .then(function ({ data }) {
-                console.log(data.data);
+                // console.log(data.data);
                 self.items = data.data
                 self.$emit('items-category', self.items)
             })
@@ -36,7 +36,7 @@ Vue.component('list-category',{
                 url: `${baseUrl}/items/category/${category}`
             })
             .then(function ({ data }) {
-                console.log(data.data);
+                // console.log(data.data);
                 self.items = data.data
                 self.$emit('items-category',self.items)
             })

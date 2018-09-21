@@ -1,4 +1,5 @@
-var baseUrl = "https://server-ecomm.vinesto.xyz"
+// var baseUrl = "https://server-ecomm.vinesto.xyz"
+var baseUrl = "http://server-ecomm.vinesto.xyz"
 // var baseUrl = "http://localhost:3000"
 // var baseUrl = "http://35.240.213.71"
 var app = new Vue({
